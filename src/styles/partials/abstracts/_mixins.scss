@@ -1,0 +1,70 @@
+@use "./variables" as *;
+
+// borders
+@mixin border-position($direction, $width, $style, $color) {
+  border-#{$direction}: $width $style $color;
+}
+
+@mixin border-all($width, $style, $color) {
+  border: $width $style $color;
+}
+
+// button default
+@mixin button($background-color, $color, $hover, $width) {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+  width: $width;
+  background-color: $background-color;
+  color: $color;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    background-color: $hover;
+  }
+}
+
+// flexbox
+@mixin flex($flex-direction, $align-items, $justify-content) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin flex-default($align-items, $justify-content) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin flex-direction($flex-direction) {
+  display: flex;
+  flex-direction: $flex-direction;
+}
+
+// larger displays
+@mixin wrap($max-width, $margin) {
+  max-width: $max-width;
+  margin: $margin;
+}
+
+@mixin full-width($color) {
+  width: 100%;
+  background: $color;
+}
+
+// responsive design
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
