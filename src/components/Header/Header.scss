@@ -1,0 +1,27 @@
+@import "./../../styles/partials/global";
+
+.header {
+  @include flex-direction(column);
+  width: 100%;
+  background-color: $color-primary;
+  font-family: "Inconsolata", monospace;
+  @include desktop {
+    @include wrap($max-width, $margin-center);
+  }
+  &__wrapper {
+    @include full-width($color-primary);
+  }
+  &__container {
+    @include flex-default(center, space-between);
+  }
+  &__logo {
+    color: $color-tertiary;
+    @include flex(row, center, space-around);
+  }
+  &__menu {
+    color: $color-secondary;
+  }
+  &__img {
+    margin-right: 0.3rem;
+  }
+}
