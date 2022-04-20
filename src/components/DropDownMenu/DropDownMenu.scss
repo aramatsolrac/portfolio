@@ -1,0 +1,52 @@
+@import "./../../styles/partials/global";
+.dropdown {
+  &__container {
+    position: relative;
+  }
+  &__trigger {
+    @include flex-default(center, center);
+  }
+  &__box {
+    @include flex(column, stretch, space-between);
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    right: 0.1rem;
+    width: 17rem;
+    height: 13rem;
+    background-color: $color-primary;
+    box-shadow: $box-shadow;
+    z-index: 2;
+    border-radius: 0.3rem;
+  }
+  &__content {
+    width: 100%;
+    @include flex(column, stretch, space-between);
+  }
+  &__icon {
+    background-color: inherit;
+    color: $color-tertiary;
+    margin-right: 0.6rem;
+    &:hover {
+      background-color: $color-secondary;
+    }
+    &-bar {
+      background-color: none;
+      color: $color-tertiary;
+      padding: 0.4rem;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      &:hover {
+        background-color: $color-secondary;
+      }
+    }
+    &-logout {
+      background-color: inherit;
+      margin-right: 0.6rem;
+    }
+  }
+  &__link {
+    color: $color-tertiary;
+    @include flex(row, center, space-around);
+  }
+}
