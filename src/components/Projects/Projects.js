@@ -4,12 +4,12 @@ import meowdoptAPIImage from "../../assets/images/meowdopt-api.png";
 import inStockImage from "../../assets/images/instock.png";
 import adviceImage from "../../assets/images/advice-generator.png";
 import brainflixImage from "../../assets/images/brainflix.png";
-import brainflixAPIImage from "../../assets/images/brainflix-api.png";
+import brainflixAPIImage from "../../assets/images/brainflix-api.jpg";
 import moviesImage from "../../assets/images/movies-search.png";
 import bandsiteImage from "../../assets/images/band-site.png";
 import travelImage from "../../assets/images/travel-site.png";
 import coffeeImage from "../../assets/images/coffee-shop.png";
-import spaceImage from "../../assets/images/spacestagram.png";
+import spaceImage from "../../assets/images/space.jpg";
 import aluraImage from "../../assets/images/alura.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
