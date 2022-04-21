@@ -60,7 +60,7 @@ class DropDownMenu extends Component {
             icon={faBars}
             onClick={this.toggleDropdown}
             className="dropdown__icon-bar"
-            size="xl"
+            size="ls"
           />
         </div>
         {this.state.dropdownVisible && this.renderDropDownMenu()}
