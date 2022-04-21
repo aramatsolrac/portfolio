@@ -1,0 +1,55 @@
+@import "./../../styles/partials/global";
+
+.projects {
+  margin: 1rem;
+  &__wrapper {
+    @include desktop {
+      @include wrap($max-width, $margin-center);
+    }
+  }
+  &__title {
+    @include title;
+  }
+  &__container {
+    margin: 3rem 0;
+  }
+  &__item {
+    margin: 1rem 0;
+    @include flex(row, center, center);
+  }
+  &__img {
+    max-width: 18rem;
+    min-width: 18rem;
+    min-height: 11rem;
+    max-height: 11rem;
+    border: 1px solid $color-tertiary;
+    object-fit: contain;
+    object-position: top;
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0%);
+      transition: all ease-in-out 0.2s;
+    }
+  }
+  &__description {
+    @include flex(row, flex-start, space-between);
+    padding: 0 0.5rem;
+    p {
+      font-size: 0.7rem;
+    }
+  }
+  &__link {
+    color: $color-tertiary;
+    font-weight: 900;
+    padding: 0 0.3rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__private-repo {
+    @include flex(row, center, center);
+    p {
+      padding: 0.5rem;
+    }
+  }
+}
