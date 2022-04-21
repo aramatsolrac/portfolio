@@ -18,13 +18,13 @@
     @include flex(row, center, center);
   }
   &__img {
-    max-width: 18rem;
+    // max-width: 18rem;
     min-width: 18rem;
-    min-height: 11rem;
-    max-height: 11rem;
+    max-height: 18rem;
+    min-height: 18rem;
     border: 1px solid $color-tertiary;
     object-fit: contain;
-    object-position: top;
+    object-position: center;
     filter: grayscale(100%);
     &:hover {
       filter: grayscale(0%);
