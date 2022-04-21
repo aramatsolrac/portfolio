@@ -1,0 +1,30 @@
+@import "./../../styles/partials/global";
+
+.skills {
+  margin: 1rem;
+  &__wrapper {
+    @include desktop {
+      @include wrap($max-width, $margin-center);
+    }
+  }
+  &__title {
+    @include title;
+  }
+  &__container {
+    @include flex(column, stretch, space-between);
+  }
+  &__item {
+    margin: 1rem 0;
+    border: 1px solid $color-tertiary;
+    padding: 1rem;
+  }
+  &__subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $color-tertiary;
+    @include flex(row, center, center);
+    h3 {
+      padding: 0.5rem;
+    }
+  }
+}
