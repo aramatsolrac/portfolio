@@ -26,6 +26,13 @@
   }
 }
 
+@mixin title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $color-tertiary;
+  border-bottom: 1px solid $color-tertiary;
+}
+
 // flexbox
 @mixin flex($flex-direction, $align-items, $justify-content) {
   display: flex;
