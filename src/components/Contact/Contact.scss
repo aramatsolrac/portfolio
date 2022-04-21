@@ -1,0 +1,20 @@
+@import "./../../styles/partials/global";
+
+.contact {
+  margin: 1rem;
+  &__wrapper {
+    @include desktop {
+      @include wrap($max-width, $margin-center);
+    }
+  }
+  &__title {
+    @include title;
+  }
+  &__text {
+    padding: 1rem 0;
+  }
+  &__icons {
+    @include flex(row, center, space-between);
+    width: 4rem;
+  }
+}
