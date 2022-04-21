@@ -1,0 +1,6 @@
+@import "./../../styles/partials/global";
+
+.hero {
+  @include flex(row, center, center);
+  height: 14rem;
+}
