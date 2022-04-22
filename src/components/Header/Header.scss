@@ -38,6 +38,5 @@
   &__menu {
     color: var(--text-primary);
     @include flex(row, center, space-around);
-    width: 4rem;
   }
 }
