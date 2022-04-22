@@ -6,6 +6,7 @@ It's my website. I intend to use it to practice what I have been learning. There
 - BEM
 - CSS
 - Sass
+- Responsive Design
 - JavaScript
 - React
   - React Hooks
