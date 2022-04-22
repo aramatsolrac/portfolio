@@ -2,9 +2,11 @@
 
 .skills {
   padding: 0.5rem;
-  height: 100vh;
   color: var(--text-primary);
   background-color: var(--background);
+  @include desktop {
+    height: 100vh;
+  }
   &__wrapper {
     @include desktop {
       @include wrap($max-width, $margin-center);

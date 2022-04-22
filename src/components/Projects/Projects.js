@@ -105,7 +105,7 @@ function Projects() {
               <div className="projects__description">
                 <div>
                   <h3>InStock</h3>
-                  <p>SASS | React | Node | Express | Sweetalert2 </p>
+                  <p>SASS | React | Node | Express </p>
                 </div>
                 <div className="projects__private-repo">
                   <p>Private Repo</p>
@@ -244,7 +244,7 @@ function Projects() {
               <div className="projects__description">
                 <div>
                   <h3>Bandsite</h3>
-                  <p> Sass | JavaScript | API </p>
+                  <p> Sass | JavaScript | API | Sweetalert2</p>
                 </div>
                 <div className="projects__private-repo">
                   <p>Private Repo</p>
