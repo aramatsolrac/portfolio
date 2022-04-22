@@ -19,14 +19,12 @@
     flex-wrap: wrap;
   }
   &__box {
-    // padding: 1rem 0;
     margin: 1rem 0;
     min-width: 17rem;
     max-width: 17rem;
     @include desktop {
       min-width: 30rem;
       max-width: 30rem;
-      // padding: 1rem;
     }
   }
   &__item {
@@ -34,7 +32,6 @@
     @include flex(row, center, center);
   }
   &__img {
-    // max-width: 18rem;
     min-width: 17rem;
     max-height: 18rem;
     min-height: 18rem;
@@ -53,6 +50,12 @@
   }
   &__description {
     @include flex(row, flex-start, space-between);
+    h3 {
+      font-size: 0.9rem;
+      @include desktop {
+        font-size: 1.3rem;
+      }
+    }
     p {
       font-size: 0.7rem;
       @include desktop {
@@ -66,7 +69,7 @@
     padding: 0 0.3rem;
     font-size: 0.7rem;
     @include desktop {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
     &:hover {
       text-decoration: underline;
@@ -78,7 +81,7 @@
       padding: 0.5rem;
       font-size: 0.7rem;
       @include desktop {
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
     }
   }
