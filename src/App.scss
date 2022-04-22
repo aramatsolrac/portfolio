@@ -1,2 +1,50 @@
 @import "./styles/partials/global.scss";
 @import "./styles/partials/base/reset";
+
+:root {
+  --background: white;
+  --text-primary: black;
+  --box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+[data-theme="dark"] {
+  --background: black;
+  --text-primary: white;
+  --box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 7px 7px;
+}
+
+.App {
+  color: var(--text-primary);
+  background-color: var(--background);
+  height: calc(100vh - 40px);
+  transition: all 0.5s;
+}
+
+.scrollTop {
+  position: fixed;
+  width: 100%;
+  bottom: 5.625rem;
+  align-self: flex-end;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 1.25rem;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+  color: var(--text-primary);
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
