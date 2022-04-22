@@ -1,8 +1,11 @@
 @import "./../../styles/partials/global";
 
 .contact {
-  margin: 1rem;
+  color: var(--text-primary);
+  background-color: var(--background);
   &__wrapper {
+    padding: 2rem 1rem;
+
     @include desktop {
       @include wrap($max-width, $margin-center);
     }
@@ -11,10 +14,15 @@
     @include title;
   }
   &__text {
-    padding: 1rem 0;
+    padding: 2rem 0;
+    // width: 50%;
   }
-  &__icons {
+  &__social {
     @include flex(row, center, space-between);
     width: 4rem;
+  }
+  &__icon {
+    color: var(--text-primary);
+    cursor: pointer;
   }
 }
