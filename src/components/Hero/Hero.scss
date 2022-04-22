@@ -1,6 +1,24 @@
 @import "./../../styles/partials/global";
 
 .hero {
+  width: 100%;
+  height: 90vh;
+  color: var(--text-primary);
+  background-color: var(--background);
+  @include full-width(var(--background));
   @include flex(row, center, center);
-  height: 14rem;
+  &__wrapper {
+    @include desktop {
+      @include wrap($max-width, $margin-center);
+    }
+  }
+  &__content {
+    @include flex(row, center, center);
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    background-color: var(--background);
+    @include desktop {
+      font-size: 3rem;
+    }
+  }
 }
