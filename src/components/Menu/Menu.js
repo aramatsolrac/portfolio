@@ -4,9 +4,6 @@ import { HashLink } from "react-router-hash-link";
 function Menu() {
   return (
     <div className="menu__content">
-      <HashLink smooth to="/#about" className="menu__link">
-        About
-      </HashLink>
       <HashLink smooth to="/#skills" className="menu__link">
         Skills
       </HashLink>
