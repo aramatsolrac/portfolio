@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./DropDownMenu.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import { HashLink } from "react-router-hash-link";
 
 class DropDownMenu extends Component {
   state = {
@@ -29,18 +29,18 @@ class DropDownMenu extends Component {
       <form onSubmit={this.props.filterCats}>
         <div className="dropdown__box">
           <div className="dropdown__content">
-            <Link to="#about" className="dropdown__link">
-              <p>About</p>
-            </Link>
-            <Link to="#skills" className="dropdown__link">
-              <p>Skills</p>
-            </Link>
-            <Link to="#projects" className="dropdown__link">
-              <p>Projects</p>
-            </Link>
-            <Link to="#contact" className="dropdown__link">
-              <p>Contact</p>
-            </Link>
+            <HashLink smooth to="/#about" className="dropdown__link">
+              About
+            </HashLink>
+            <HashLink smooth to="/#skills" className="dropdown__link">
+              Skills
+            </HashLink>
+            <HashLink smooth to="/#projects" className="dropdown__link">
+              Projects
+            </HashLink>
+            <HashLink smooth to="/#contact" className="dropdown__link">
+              Contact
+            </HashLink>
           </div>
         </div>
       </form>
@@ -56,12 +56,21 @@ class DropDownMenu extends Component {
         }}
       >
         <div className="dropdown__trigger">
-          <FontAwesomeIcon
-            icon={faBars}
-            onClick={this.toggleDropdown}
-            className="dropdown__icon-bar"
-            size="ls"
-          />
+          {this.state.dropdownVisible ? (
+            <FontAwesomeIcon
+              icon={faClose}
+              onClick={this.toggleDropdown}
+              className="dropdown__icon"
+              size="xl"
+            />
+          ) : (
+            <FontAwesomeIcon
+              icon={faBars}
+              onClick={this.toggleDropdown}
+              className="dropdown__icon"
+              size="xl"
+            />
+          )}
         </div>
         {this.state.dropdownVisible && this.renderDropDownMenu()}
       </div>
