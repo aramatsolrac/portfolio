@@ -1,38 +1,30 @@
 import "./Hero.scss";
-import Typical from "react-typical";
+import Typed from "react-typed";
 
 function Hero() {
   return (
-    <div className="hero">
+    <div className="hero" id="about">
       <div className="hero__wrapper">
-        <div>
-          <Typical
-            steps={[
+        <div className="hero__content">
+          <Typed
+            strings={[
               "Hey 👋",
-              1000,
-              "I'm Tamara Carlos.",
-              2000,
-              "I'm a Full Stack Web Developer.",
-              2000,
+              "I'm Tamara :)",
+              "I'm a Full Stack Developer 💻",
+              "I'm a lifelong learner 📚",
               "I love 💻",
-              1000,
               "I love 🐱",
-              1000,
               "I love 🐶",
-              1000,
               "I love 🪴",
-              1000,
               "I love 🧩",
-              1000,
+              "I love 📚",
               "I love 🏕️",
-              1000,
               "I love 🥾",
-              1000,
               "I love 🚵🏻",
-              1000,
             ]}
-            loop={Infinity}
-            wrapper="p"
+            typeSpeed={30}
+            backSpeed={40}
+            loop
           />
         </div>
       </div>
