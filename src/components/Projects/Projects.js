@@ -162,7 +162,7 @@ function Projects() {
               <div className="projects__description">
                 <div>
                   <h3>BrainFlix</h3>
-                  <p>SASS | React | Node | Express | Sweetalert2 </p>
+                  <p>SASS | React | Sweetalert2 </p>
                 </div>
                 <div className="projects__private-repo">
                   <p>Private Repo</p>
@@ -212,7 +212,7 @@ function Projects() {
               <div className="projects__description">
                 <div>
                   <h3>Movies Search</h3>
-                  <p> Sass | JavaScript | TMDB API </p>
+                  <p> SASS| JavaScript | TMDB API </p>
                 </div>
                 <div>
                   <a
@@ -244,7 +244,7 @@ function Projects() {
               <div className="projects__description">
                 <div>
                   <h3>Bandsite</h3>
-                  <p> Sass | JavaScript | API | Sweetalert2</p>
+                  <p>SASS | JS | API | Sweetalert2</p>
                 </div>
                 <div className="projects__private-repo">
                   <p>Private Repo</p>
@@ -269,7 +269,7 @@ function Projects() {
               <div className="projects__description">
                 <div>
                   <h3>Travel Site</h3>
-                  <p> HTML | CSS| BEM </p>
+                  <p> HTML | CSS | BEM </p>
                 </div>
                 <div className="projects__private-repo">
                   <p>Private Repo</p>
@@ -294,7 +294,7 @@ function Projects() {
               <div className="projects__description">
                 <div>
                   <h3>Coffee Shop</h3>
-                  <p> HTML | CSS| BEM </p>
+                  <p> HTML | CSS | BEM </p>
                 </div>
                 <div className="projects__private-repo">
                   <p>Private Repo</p>
