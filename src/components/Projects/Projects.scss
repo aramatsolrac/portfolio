@@ -1,7 +1,9 @@
 @import "./../../styles/partials/global";
 
 .projects {
-  margin: 1rem;
+  padding: 1rem;
+  color: var(--text-primary);
+  background-color: var(--background);
   &__wrapper {
     @include desktop {
       @include wrap($max-width, $margin-center);
@@ -11,7 +13,21 @@
     @include title;
   }
   &__container {
-    margin: 3rem 0;
+    @include flex-default(center, space-around);
+    margin: 1rem 0;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  &__box {
+    // padding: 1rem 0;
+    margin: 1rem 0;
+    min-width: 17rem;
+    max-width: 17rem;
+    @include desktop {
+      min-width: 30rem;
+      max-width: 30rem;
+      // padding: 1rem;
+    }
   }
   &__item {
     margin: 1rem 0;
@@ -19,12 +35,16 @@
   }
   &__img {
     // max-width: 18rem;
-    min-width: 18rem;
+    min-width: 17rem;
     max-height: 18rem;
     min-height: 18rem;
-    border: 1px solid $color-tertiary;
+    border: 1px solid var(--text-primary);
     object-fit: contain;
     object-position: center;
+    @include desktop {
+      min-width: 30rem;
+      max-width: 30rem;
+    }
     filter: grayscale(100%);
     &:hover {
       filter: grayscale(0%);
@@ -33,15 +53,21 @@
   }
   &__description {
     @include flex(row, flex-start, space-between);
-    padding: 0 0.5rem;
     p {
       font-size: 0.7rem;
+      @include desktop {
+        font-size: 1rem;
+      }
     }
   }
   &__link {
-    color: $color-tertiary;
+    color: var(--text-primary);
     font-weight: 900;
     padding: 0 0.3rem;
+    font-size: 0.7rem;
+    @include desktop {
+      font-size: 1rem;
+    }
     &:hover {
       text-decoration: underline;
     }
@@ -50,6 +76,10 @@
     @include flex(row, center, center);
     p {
       padding: 0.5rem;
+      font-size: 0.7rem;
+      @include desktop {
+        font-size: 1rem;
+      }
     }
   }
 }
