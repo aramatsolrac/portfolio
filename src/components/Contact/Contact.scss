@@ -15,7 +15,9 @@
   }
   &__text {
     padding: 2rem 0;
-    // width: 50%;
+    @include desktop {
+      font-size: 1.4rem;
+    }
   }
   &__social {
     @include flex(row, center, space-between);
