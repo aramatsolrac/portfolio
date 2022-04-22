@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./DropDownMenu.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
-import { HashLink } from "react-router-hash-link";
+import Menu from "../Menu/Menu";
 
 class DropDownMenu extends Component {
   state = {
@@ -28,7 +28,7 @@ class DropDownMenu extends Component {
     return (
       <form onSubmit={this.props.filterCats}>
         <div className="dropdown__box">
-          <div className="dropdown__content">
+          {/* <div className="dropdown__content">
             <HashLink smooth to="/#about" className="dropdown__link">
               About
             </HashLink>
@@ -41,7 +41,8 @@ class DropDownMenu extends Component {
             <HashLink smooth to="/#contact" className="dropdown__link">
               Contact
             </HashLink>
-          </div>
+          </div> */}
+          <Menu />
         </div>
       </form>
     );
