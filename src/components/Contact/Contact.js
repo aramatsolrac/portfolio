@@ -9,10 +9,7 @@ function Contact() {
       <div className="contact__wrapper">
         <h1 className="contact__title">Contact</h1>
         <p className="contact__text">
-          {`I am currently open to new opportunities. If you have a question or
-            just want to say hello, talk about code, pets, hiking, or even
-            expand your network, please contact me and I will be delighted to
-            talk with you! :)`}
+          {`I am currently open to new opportunities. If you have a question or want to say hello, talk about code, pets, hiking, or even expand your network, don't hesitate to contact me, and I will be delighted to chat with you! :)`}
         </p>
         <div className="contact__social">
           <FontAwesomeIcon
