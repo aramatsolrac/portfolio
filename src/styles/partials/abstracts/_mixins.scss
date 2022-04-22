@@ -29,8 +29,11 @@
 @mixin title {
   font-size: 1.5rem;
   font-weight: 500;
-  color: $color-tertiary;
-  border-bottom: 1px solid $color-tertiary;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--text-primary);
+  @include desktop {
+    font-size: 2rem;
+  }
 }
 
 // flexbox
