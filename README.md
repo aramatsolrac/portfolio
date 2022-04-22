@@ -1,6 +1,6 @@
 # Tamara Carlos
 
-It's my website. I intend to use it to practice what I have been learning. Therefore, I will keep updating it. So far, I have used:
+It's my website. I intend to use it to practice what I have been learning. I'm trying to make it simple for now to have an MVP and then improve it as I go. Therefore, I will keep updating it. So far, I have used:
 
 - HTML
 - BEM
