@@ -13,29 +13,17 @@
     top: 100%;
     right: 0.3rem;
     width: 13rem;
-    height: 9rem;
+    height: 13rem;
     background-color: var(--background);
     box-shadow: var(--box-shadow);
     z-index: 2;
     border: 0.0625rem solid var(--text-primary);
   }
-  &__content {
-    width: 100%;
-    @include flex(column, stretch, space-between);
-  }
+
   &__icon {
     background-color: inherit;
     color: var(--text-primary);
     margin: 0.3rem;
     cursor: pointer;
-  }
-  &__link {
-    color: var(--text-primary);
-    @include flex(row, center, center);
-    &:hover,
-    &:focus,
-    &:active {
-      text-decoration: underline;
-    }
   }
 }
