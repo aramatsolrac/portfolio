@@ -1,0 +1,88 @@
+@import "./../../styles/partials/global";
+
+.projects {
+  padding: 1rem;
+  color: var(--text-primary);
+  background-color: var(--background);
+  &__wrapper {
+    @include desktop {
+      @include wrap($max-width, $margin-center);
+    }
+  }
+  &__title {
+    @include title;
+  }
+  &__container {
+    @include flex-default(center, space-around);
+    margin: 1rem 0;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  &__box {
+    margin: 1rem 0;
+    min-width: 17rem;
+    max-width: 17rem;
+    @include desktop {
+      min-width: 30rem;
+      max-width: 30rem;
+    }
+  }
+  &__item {
+    margin: 1rem 0;
+    @include flex(row, center, center);
+  }
+  &__img {
+    min-width: 17rem;
+    max-height: 18rem;
+    min-height: 18rem;
+    border: 1px solid var(--text-primary);
+    object-fit: contain;
+    object-position: center;
+    @include desktop {
+      min-width: 30rem;
+      max-width: 30rem;
+    }
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0%);
+      transition: all ease-in-out 0.2s;
+    }
+  }
+  &__description {
+    @include flex(row, flex-start, space-between);
+    h3 {
+      font-size: 0.9rem;
+      @include desktop {
+        font-size: 1.3rem;
+      }
+    }
+    p {
+      font-size: 0.7rem;
+      @include desktop {
+        font-size: 1rem;
+      }
+    }
+  }
+  &__link {
+    color: var(--text-primary);
+    font-weight: 900;
+    padding: 0 0.3rem;
+    font-size: 0.7rem;
+    @include desktop {
+      font-size: 1.1rem;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__private-repo {
+    @include flex(row, center, center);
+    p {
+      padding: 0.5rem;
+      font-size: 0.7rem;
+      @include desktop {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

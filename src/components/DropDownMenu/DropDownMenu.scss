@@ -1,0 +1,29 @@
+@import "./../../styles/partials/global";
+.dropdown {
+  &__container {
+    position: relative;
+  }
+  &__trigger {
+    @include flex-default(center, center);
+  }
+  &__box {
+    @include flex(column, center, center);
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    right: 0.3rem;
+    width: 13rem;
+    height: 13rem;
+    background-color: var(--background);
+    box-shadow: var(--box-shadow);
+    z-index: 2;
+    border: 0.0625rem solid var(--text-primary);
+  }
+
+  &__icon {
+    background-color: inherit;
+    color: var(--text-primary);
+    margin: 0.3rem;
+    cursor: pointer;
+  }
+}

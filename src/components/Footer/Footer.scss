@@ -1,0 +1,32 @@
+@import "./../../styles/partials/global";
+
+.footer {
+  color: var(--text-primary);
+  background-color: var(--background);
+  @include full-width(var(--background));
+
+  &__wrapper {
+    @include desktop {
+      @include wrap($max-width, $margin-center);
+    }
+  }
+  &__container {
+    @include flex(column, center, space-between);
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  &__link {
+    @include flex(row, center, space-around);
+    min-width: 40%;
+    max-width: 40%;
+    padding: 0.5rem;
+    @include tablet {
+      min-width: 10%;
+      max-width: 10%;
+    }
+  }
+
+  &__icon {
+    color: var(--text-primary);
+    cursor: pointer;
+  }
+}

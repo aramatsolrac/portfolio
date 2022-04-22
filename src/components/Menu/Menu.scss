@@ -1,0 +1,21 @@
+@import "./../../styles/partials/global";
+
+.menu {
+  &__content {
+    @include flex(column, center, space-between);
+    @include tablet {
+      @include flex(row, center, space-between);
+      font-size: 1.5rem;
+    }
+  }
+
+  &__link {
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "./../../styles/partials/global";
+
+.contact {
+  color: var(--text-primary);
+  background-color: var(--background);
+  &__wrapper {
+    padding: 2rem 1rem;
+
+    @include desktop {
+      @include wrap($max-width, $margin-center);
+    }
+  }
+  &__title {
+    @include title;
+  }
+  &__text {
+    padding: 2rem 0;
+    @include desktop {
+      font-size: 1.4rem;
+    }
+  }
+  &__social {
+    @include flex(row, center, space-between);
+    width: 4rem;
+  }
+  &__icon {
+    color: var(--text-primary);
+    cursor: pointer;
+  }
+}

@@ -1,6 +1,81 @@
 @font-face {
-  font-family: "";
+  font-family: "Inconsolata";
+  src: url("./../../../assets/fonts/Inconsolata-ExtraLight.woff2")
+      format("woff2"),
+    url("./../../../assets/fonts/Inconsolata-ExtraLight.woff") format("woff");
+  font-weight: 200;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("./../../../assets/fonts/Inconsolata-Light.woff2") format("woff2"),
+    url("./../../../assets/fonts/Inconsolata-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("./../../../assets/fonts/Inconsolata-Medium.woff2") format("woff2"),
+    url("./../../../assets/fonts/Inconsolata-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("./../../../assets/fonts/Inconsolata-Regular.woff2") format("woff2"),
+    url("./../../../assets/fonts/Inconsolata-Regular.woff") format("woff");
   font-weight: normal;
-  src: url("") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./../../../assets/fonts/Raleway-Light.woff2") format("woff2"),
+    url("./../../../assets/fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./../../../assets/fonts/Raleway-Regular.woff2") format("woff2"),
+    url("./../../../assets/fonts/Raleway-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./../../../assets/fonts/Raleway-Medium.woff2") format("woff2"),
+    url("./../../../assets/fonts/Raleway-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./../../../assets/fonts/Raleway-SemiBold.woff2") format("woff2"),
+    url("./../../../assets/fonts/Raleway-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./../../../assets/fonts/Raleway-Thin.woff2") format("woff2"),
+    url("./../../../assets/fonts/Raleway-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }

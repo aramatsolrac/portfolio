@@ -1,0 +1,42 @@
+@import "./../../styles/partials/global";
+
+.header {
+  width: 100%;
+  color: var(--text-primary);
+  background-color: var(--background);
+  padding: 1rem;
+  @include desktop {
+    @include wrap($max-width, $margin-center);
+    padding: 1rem 0;
+  }
+  &__wrapper {
+    @include full-width(var(--background));
+  }
+  &__container {
+    @include flex-default(center, space-between);
+    padding: 1rem 0;
+  }
+  &__logo {
+    color: var(--text-primary);
+    @include flex(row, center, space-around);
+    font-size: 1.5rem;
+    @include desktop {
+      font-size: 1.8rem;
+    }
+  }
+  &__button {
+    cursor: pointer;
+    color: var(--text-primary);
+    background-color: transparent;
+    transition: all 0.5s;
+    border: none;
+    margin: 0;
+  }
+  &__icon {
+    padding-right: 1rem;
+  }
+  &__menu {
+    color: var(--text-primary);
+    @include flex(row, center, space-around);
+  }
+}
