@@ -3,6 +3,7 @@
 It's my website. I intend to use it to practice what I have been learning. Therefore, I will keep updating it. So far, I have used:
 
 - HTML
+- BEM
 - CSS
 - Sass
 - JavaScript
