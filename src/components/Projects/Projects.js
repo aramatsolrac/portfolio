@@ -1,4 +1,5 @@
 import "./Projects.scss";
+import { projectsData } from "../../projectsData/projectsData";
 import meowdoptImage from "../../assets/images/meowdopt.jpg";
 import meowdoptAPIImage from "../../assets/images/meowdopt-api.png";
 import inStockImage from "../../assets/images/instock.png";
@@ -18,6 +19,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function Projects() {
+  console.log({ projectsData });
   return (
     <div className="projects" id="projects">
       <div className="projects__wrapper">
