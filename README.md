@@ -13,7 +13,7 @@ It's my website. I intend to use it to practice what I have been learning. I'm t
 
 ### Live
 
-- [Tamara Carlos](https://tamara-carlos.herokuapp.com/)</a>
+- [Tamara Carlos](https://tamaracarlos.com/)</a>
 
 ### Author
 
