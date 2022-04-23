@@ -7,13 +7,13 @@ import DropDownMenu from "../DropDownMenu/DropDownMenu";
 import Menu from "../Menu/Menu";
 
 function Header(props) {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
   //choose the screen size
   const handleResize = () => {
-    if (window.innerWidth < 768) {
-      setIsMobile(true);
-    } else {
+    if (window.innerWidth >= 768) {
       setIsMobile(false);
+    } else {
+      setIsMobile(true);
     }
   };
 
