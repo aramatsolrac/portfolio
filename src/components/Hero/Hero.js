@@ -10,7 +10,7 @@ function Hero() {
             strings={[
               "Hey 👋",
               "I'm Tamara :)",
-              "I'm a Full Stack Developer 💻",
+              "I'm a Full Stack Web Developer 💻",
               "I'm a lifelong learner 📚",
               "I love 💻",
               "I love 🐱",
