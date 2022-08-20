@@ -25,6 +25,8 @@ function Skills() {
               <p>- Flexbox</p>
               <p>- Responsive Design</p>
               <p>- JavaScript</p>
+              <p>- Typescript</p>
+              <p>- Vue</p>
               <p>- React</p>
             </div>
           </div>
