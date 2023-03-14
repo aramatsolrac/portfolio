@@ -11,7 +11,7 @@ export const projectsData = [
     id: 2,
     title: "meowdopt API",
     image: "./../assets/images/meowdopt-api.png",
-    link: "https://meowdopt-api.herokuapp.com/",
+    link: "https://api-meowdopt.herokuapp.com/",
     tech: ["Node.js", "Express", "Knex", "MySQL"],
     code: "https://github.com/aramatsolrac/meowdopt-API",
   },
