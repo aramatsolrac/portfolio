@@ -28,6 +28,8 @@ function Skills() {
               <p>- Typescript</p>
               <p>- Vue</p>
               <p>- React</p>
+              <p>- React Native</p>
+              <p>- Jest</p>
             </div>
           </div>
           <div className="skills__item">
@@ -36,6 +38,7 @@ function Skills() {
               <h3>Backend</h3>
             </div>
             <div>
+              <p>- Kotlin</p>
               <p>- Node</p>
               <p>- Express</p>
               <p>- Knex</p>
