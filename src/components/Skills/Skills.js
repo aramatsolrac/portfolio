@@ -28,8 +28,6 @@ function Skills() {
               <p>- Typescript</p>
               <p>- Vue</p>
               <p>- React</p>
-              <p>- React Native</p>
-              <p>- Jest</p>
             </div>
           </div>
           <div className="skills__item">
