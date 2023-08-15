@@ -20,14 +20,12 @@ function Skills() {
             <div>
               <p>- HTML</p>
               <p>- CSS</p>
-              <p>- BEM</p>
               <p>- SASS</p>
-              <p>- Flexbox</p>
               <p>- Responsive Design</p>
               <p>- JavaScript</p>
               <p>- Typescript</p>
               <p>- Vue</p>
-              <p>- React</p>
+              <p>- React/React Native</p>
             </div>
           </div>
           <div className="skills__item">
